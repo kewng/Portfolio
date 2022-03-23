@@ -1,0 +1,196 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Style+Script&display=swap');
+
+
+
+
+
+* {
+	box-sizing:border-box;
+	font-family:"Urbanist", sans-serif;
+	margin:0;
+	padding:0
+}
+
+.aboutme{
+	height:100%;
+	display: flexbox;
+	justify-content:center;
+	margin-top: 10%;
+	align-items:center;
+}
+
+.profile{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.profile-esquerda{
+	margin: 0;
+	margin-left: 50vh;
+	padding-top:43px;
+	width:400px;
+	text-align:center;
+	background-color:#F6CEEC;
+	box-shadow:black 1px 10px 100px -40px;
+	border-radius: 30% 0% 0% 0%;
+}
+
+.profile-direita{
+	margin: 0;
+	padding-top:34px;
+	padding-left:30px;
+	padding-right:30px;
+	width:480px;
+	background-color:#fff;
+}
+
+.img{
+	width:205px;
+	height:205px;
+	overflow:hidden;
+	border-radius:100%;
+	margin:0 auto 34px auto;
+}
+
+.img img{
+	width:100%
+}
+
+.nome{
+	font-weight:700;
+	font-size:27px;
+}
+
+.underline{
+	width:50px;
+	height:3px;
+	background:#FA58AC;
+	margin:0 auto;
+	margin-top:25px;
+}
+
+.subtitulo{
+	margin-top:25px;
+	letter-spacing:0.25rem;
+	font-weight:600;
+}
+
+.social{
+	margin-top:51px;
+	padding:14px 100px;
+	display:flex;
+	justify-content:space-between;
+	background-color:#fff;
+	list-style-type:none;
+}
+
+.social li{
+	font-size:20px;
+}
+
+.social li a{
+	color:#000;
+}
+
+.titulo{
+	font-size:100px;
+	font-weight:700;
+}
+
+.subtitle{
+	font-size:25px;
+	color: #FA58AC;
+}
+
+.descricao{
+	margin-top:56px;
+	line-height:1.5em;
+	font-size:17px;
+	font-weight:600;
+}
+
+.button{
+	width:130px;
+	height:35px;
+	background:none;
+	border-radius:24px;
+	border:0.12rem solid #000;
+	font-weight:600;
+	font-size:14px;
+	margin-top:38px;
+	transition:0.5s all;
+	cursor:pointer;
+}
+
+.button:hover{
+	background-color:#FA58AC;
+	color:#FFF;
+	border:0.12rem solid #7802ff;
+}
+
+
+@media (max-width: 700px){
+	.profile{
+		margin: auto;
+		display: flex;
+	}
+
+	.profile-esquerda{
+		width:350px;
+		margin: 0 auto;
+		border-radius: 10% 10% 0% 0% ;
+	}
+	.profile-direita{
+		width:350px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 700px) and (max-width: 800px){
+	.profile{
+		margin: auto;
+		display: flex;
+	}
+
+	.profile-esquerda{
+		margin-right: 0;
+		margin-left: auto;
+		width:350px;
+	}
+	.profile-direita{
+		width:350px;
+		margin-right: auto;
+		margin-left: 0;
+	}
+
+	.social{
+		margin-top: 50%;
+	}
+}
+
+@media (min-width: 800px) and (max-width: 1400px){
+	.profile{
+		margin: 0;
+	}
+
+	.profile-esquerda{
+		margin-right: 0;
+		margin-left: auto;
+		width:400px;
+	}
+
+	.profile-direita{
+		width:400px;
+		margin-right: auto;
+		margin-left: 0;
+	}
+
+	.social{
+		margin-top: 50%;
+	}
+
+}
+
+
